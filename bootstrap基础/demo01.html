@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!-- utf-8编码 -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 放在虚拟视口vieewport中,宽度=设备的宽度,页面第一次载入的时候的缩放比例为1 -->
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- <form action="demo_form.asp" method="get">
+        <input type="search" name="user_search" placeholder="Search W3School" />
+        <input type="submit" />
+    </form> -->
+    <!-- <h1>孤儿院无私奉献30年
+        <small>一曲人性的赞歌</small>
+    </h1>
+    <p>
+        <p>超酷的互联网、IT技术免费学习平台，创新的网络一站式学习、实践体验；服务及时贴心，内容专业、有趣易学。专注服务互联网工程师快速成为技术高手！</p>
+        <p>超酷的互联网、IT技术免费学习平台，创新的网络一站式学习、实践体验；服务及时贴心，内容专业、有趣易学。专注服务互联网工程师快速成为技术高手！</p>
+    </p>
+    <div class="text-muted">.text-muted 效果</div>
+    <div class="text-primary">.text-primary效果</div>
+    <div class="text-success">.text-success效果</div>
+    <div class="text-info">.text-info效果</div>
+    <div class="text-warning">.text-warning效果</div>
+    <div class="text-danger">.text-danger效果</div>
+
+
+    <ul>
+        <li>无序列表信息1</li>
+        <li>无序列表信息2</li>
+        <li>无序列表信息3</li>
+    </ul>
+    <ol>
+        <li>有序列表信息1</li>
+        <li>有序列表信息2</li>
+        <li>有序列表信息3</li>
+    </ol>
+    <dl>
+        <dt>定义列表标题</dt>
+        <dd>定义列表信息1</dd>
+        <dd>定义列表信息2</dd>
+    </dl>
+
+    <h5>普通列表</h5>
+    <ul>
+        <li>列表项目</li>
+        <li>列表项目</li>
+        <li>列表项目</li>
+        <li>列表项目</li>
+        <li>列表项目</li>
+    </ul>
+    <h5>有序列表</h5>
+    <ol>
+        <li>项目列表一</li>
+        <li>项目列表二</li>
+        <li>项目列表三</li>
+    </ol>
+    <h5>有序列表嵌套</h5>
+    <ol>
+        <li>有序列表</li>
+        <li>
+            有序列表
+            <ol>
+                <li>有序列表(2)</li>
+                <li>有序列表(2)</li>
+            </ol>
+        </li>
+        <li>有序列表</li>
+    </ol>
+
+    <ol>
+        <li>有序项目列表一</li>
+        <li>有序项目列表二</li>
+
+        <ol class="list-unstyled">
+            <li>有序二级项目列表一</li>
+            <li>有序二级项目列表二</li>
+
+            <ul>
+                <li>无序三级项目列表一</li>
+                <li>无序三级项目列表二</li>
+
+                <ul class="list-unstyled">
+                    <li>无序四级项目列表一</li>
+                    <li>无序四级项目列表二</li>
+                </ul>
+
+                <li>无序三级项目列表三</li>
+            </ul>
+
+            <li>有序二级项目列表三</li>
+        </ol>
+
+        <li>有序项目列表三</li>
+    </ol>
+
+
+    <ul class="list-unstyled">
+        <li>城市:</li>
+        <ul class="list-inline">
+            <li>北京</li>
+            <li>上海</li>
+            <li>南京</li>
+            <li>厦门</li>
+        </ul>
+    </ul>
+
+    <dl>
+        <dt>北京</dt>
+        <dd>北京市中国的首都,是政治文化集中地</dd>
+        <dt>上海</dt>
+        <dd>上海号称东方的巴黎</dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+        <dt>标题一:</dt>
+        <dd>描述内容</dd>
+        <dt>标题二:</dt>
+        <dd>描述内容</dd>
+    </dl>
+
+    code风格：
+    <div>Bootstrap的代码风格有三种：<code>&lt;code&gt;</code>、<code>&lt;pre&gt;</code>和<code>&lt;kbd&gt;</code></div>
+    pre风格：
+    <div>
+        <pre>
+&lt;ul&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+    </div>
+    kbd风格：
+    <div>请输入<kbd>ctrl+c</kbd>来复制代码，然后使用<kbd>ctrl+v</kbd>来粘贴代码</div>-->
+
+
+    <!--下面是代码任务部分-->
+
+    <!-- <p>请使用<kbd>ctrl+x</kbd>复制代码，然后使用<kbd>ctrl+shift+v</kbd>将复制的代码粘贴到需要的地方。</p>
+
+
+    <pre class="pre-scrollable">
+        <ol>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+            <li>....</li>
+        </ol>
+        </pre>
+    <h1>基础表格</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>表格标题</th>
+                <th>表格标题</th>
+                <th>表格标题</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>斑马线表格</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>表格标题</th>
+                <th>表格标题</th>
+                <th>表格标题</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>带边框的表格</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>表格标题</th>
+                <th>表格标题</th>
+                <th>表格标题</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>鼠标悬浮高亮的表格</h1>
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>表格标题</th>
+                <th>表格标题</th>
+                <th>表格标题</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>紧凑型表格</h1>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>表格标题</th>
+                <th>表格标题</th>
+                <th>表格标题</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+            <tr>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+                <td>表格单元格</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>响应式表格</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>表格标题</th>
+                    <th>表格标题</th>
+                    <th>表格标题</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+                <tr>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+                <tr>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+                <tr>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                    <td>表格单元格</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>类名</th>
+                    <th>描述</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active">
+                    <td>.active</td>
+                    <td>表示当前活动的信息</td>
+                </tr>
+                <tr class="success">
+                    <td>.success</td>
+                    <td>表示成功或者正确的行为</td>
+                </tr>
+                <tr class="info">
+                    <td>.info</td>
+                    <td>表示中立的信息或行为</td>
+                </tr>
+                <tr class="warning">
+                    <td>.warning</td>
+                    <td>表示警告，需要特别注意</td>
+                </tr>
+                <tr class="danger">
+                    <td>.danger</td>
+                    <td>表示危险或者可能是错误的行为</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form role="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">邮箱：</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入您的邮箱地址">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">密码</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入您的邮箱密码">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> 记住密码
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">进入邮箱</button>
+        </form>
+    </div>
+
+
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入您的邮箱地址">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="请输入您的邮箱密码">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> 记住密码
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">进入邮箱</button>
+            </div>
+        </div>
+    </form>
+    <p>我是普通文本，我的样子长成这样我是普通文本，我的样子长成这样我是普通文本，</p>
+    <p class="lead">我是特意要突出的文本，我的样子成这样。我是特意要突出的文本，我的样子长成这样。</p> -->
+
+    <!-- <form class="form-inline" role="form">
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">邮箱</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="请输入你的邮箱地址">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword2">密码</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="请输入你的邮箱密码">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> 记住密码
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">进入邮箱</button>
+    </form>
+    <form role="form">
+        <div class="form-group">
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+    </form> -->
+    <!-- <form role="form">
+        <div class="form-group">
+            <label class="radio-inline"><input type="radio" value="option1" name="sex">男性</label>
+            <label class="radio-inline"><input type="radio" value="option2" name="sex">女性</label>
+            <label class="radio-inline"><input type="radio" value="option3" name="sex" checked>中性</label>
+        </div>
+    </form> -->
+    <!-- <table class="table table-bordered table-striped">  
+        <thead>  
+          <tr>  
+            <th>Button</th>  
+            <th>class=""</th>  
+            <th>Description</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr>  
+            <td><button class="btn" href="#">Default</button></td>  
+            <td><code>btn</code></td>  
+            <td>Standard gray button with gradient</td>  
+          </tr>  
+          <tr>  
+            <td><button class="btn btn-primary" href="#">Primary</button></td>  
+            <td><code>btn btn-primary</code></td>  
+            <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>  
+          </tr>  
+          <tr>  
+            <td><button class="btn btn-info" href="#">Info</button></td>  
+            <td><code>btn btn-info</code></td>  
+            <td>Used as an alternative to the default styles</td>  
+          </tr>  
+          <tr>  
+            <td><button class="btn btn-success" href="#">Success</button></td>  
+            <td><code>btn btn-success</code></td>  
+            <td>Indicates a successful or positive action</td>  
+          </tr>  
+          <tr>  
+            <td><button class="btn btn-warning" href="#">Warning</button></td>  
+            <td><code>btn btn-warning</code></td>  
+            <td>Indicates caution should be taken with this action</td>  
+          </tr>  
+          <tr>  
+            <td><button class="btn btn-danger" href="#">Danger</button></td>  
+            <td><code>btn btn-danger</code></td>  
+            <td>Indicates a dangerous or potentially negative action</td>  
+          </tr>  
+          <tr>  
+            <td><button class="btn btn-inverse" href="#">Inverse</button></td>  
+            <td><code>btn btn-inverse</code></td>  
+            <td>Alternate dark gray button, not tied to a semantic action or use</td>  
+          </tr>  
+        </tbody>  
+      </table>     -->
+    <!-- <h1>案例1</h1>
+    <form role="form">
+        <div class="form-group">
+            <label class="control-label">控件变大</label>
+            <input class="form-control input-lg" type="text" placeholder="添加.input-lg，控件变大">
+        </div>
+        <div class="form-group">
+            <label class="control-label">正常大小</label>
+            <input class="form-control" type="text" placeholder="正常大小">
+        </div>
+        <div class="form-group">
+            <label class="control-label">控件变小</label>
+            <input class="form-control input-sm" type="text" placeholder="添加.input-sm，控件变小">
+        </div>
+    </form> -->
+    <!-- <form role="from">
+        <div class="checkbox">
+            <label><input type="checkbox" value="" disabled>复选框</label>
+        </div>
+    </form> -->
+    <!-- <form role="form">
+        <fieldset disabled>
+          <div class="form-group">
+          <label for="disabledTextInput">禁用的输入框</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="禁止输入">
+          </div>
+          <div class="form-group">
+          <label for="disabledSelect">禁用的下拉框</label>
+            <select id="disabledSelect" class="form-control">
+          <option>不可选择</option>
+          </select>
+          </div>
+          <div class="checkbox">
+          <label>
+            <input type="checkbox">无法选择
+          </label>
+          </div>
+          <button type="submit" class="btnbtn-primary">提交</button>
+        </fieldset>
+        </form> -->
+    <!-- <form>
+        <fieldset disabled>
+            <legend>health information<input type="text"></legend>
+            height: <input type="text" />
+            weight: <input type="text" />
+        </fieldset>
+    </form> -->
+    <!-- <form>
+        <div class="form-group has-error ">
+            <label class="control-label" for="inp">输入</label>
+            <input type="text" id="inp" class="form-control">
+        </div>
+    </form> -->
+    <!-- <div class="form-group has-success has-feedback">
+        <label class="control-label" for="inputSuccess1">成功状态</label>
+        <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态">
+        <span class="help-block">你输入的信息是正确的</span>
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div> -->
+    <!-- <form role="form">
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess1">成功状态</label>
+            <input type="text" class="form-control" id="inputSuccess1" placeholder="成功状态">
+            <span class="help-block">你输入的信息是正确的</span>
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+        <div class="form-group has-warning has-feedback">
+            <label class="control-label" for="inputWarning1">警告状态</label>
+            <input type="text" class="form-control" id="inputWarning1" placeholder="警告状态">
+            <span class="help-block">请输入正确信息</span>
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label class="control-label" for="inputError1">错误状态</label>
+            <input type="text" class="form-control" id="inputError1" placeholder="错误状态">
+            <span class="help-block">你输入的信息是错误的</span>
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        </div>
+    </form> -->
+    <!-- <button class="btn" type="button" disabled>基础按钮.btn</button>  
+    <button class="btn btn-default" type="button" disabled>默认按钮.btn-default</button> 
+    <button class="btn btn-primary" type="button" disabled>主要按钮.btn-primary</button> 
+    <button class="btn btn-success" type="button" disabled>成功按钮.btn-success</button> 
+    <button class="btn btn-info" type="button">信息按钮.btn-info</button> 
+    <button class="btn btn-warning" type="button">警告按钮.btn-warning</button> 
+    <button class="btn btn-danger" type="button">危险按钮.btn-danger</button> 
+    <button class="btn btn-link" type="button">链接按钮.btn-link</button>  -->
+    <!-- <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img   alt="140x140" src="http://placehold.it/140x140">
+              <div>默认图片</div>
+          </div>
+          <div class="col-sm-4">
+            <img  class="img-rounded" alt="140x140" src="http://placehold.it/140x140"> 
+              <div>圆角图片</div>
+          </div>
+          <div class="col-sm-4">
+            <img  class="img-circle" alt="140x140" src="http://placehold.it/140x140">
+              <div>圆形图片</div>
+          </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <img  class="img-thumbnail" alt="140x140" src="http://placehold.it/140x140"> 
+                  <div>缩略图</div>
+              </div>
+              <div class="col-sm-6">
+                <img  class="img-responsive" alt="140x140" src="http://placehold.it/140x140" /> 
+                <div>响应式图片</div>
+              </div>
+            </div>
+        </div>
+      </div>  -->
+    <!-- <div class="container">
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-8">.col-md-8</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">.col-md-3</div>
+          <div class="col-md-6">.col-md-6</div>
+          <div class="col-md-3">.col-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">col-md-4</div>
+            <div class="col-md-7">col-md-7</div>
+        </div>
+      </div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-2">qqq</div>
+            <div class="col-md-2 col-md-offset-1">www</div>
+            <div class="col-md-2 col-md-offset-6">eee</div>
+            <div class="col-md-3 col-md-offset-2">rrr</div>
+        </div>
+    </div> -->
+    <!-- <div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-push-8 md4">.col-md-4</div>
+    <div class="col-md-8 col-md-pull-4 md8">.col-md-8</div>
+  </div>
+</div> -->
+    <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        我的里面嵌套了一个网格
+        <div class="row">
+          <div class="col-md-6">col-md-6</div>
+          <div class="col-md-6">col-md-6</div>
+        </div>
+      </div>
+      <div class="col-md-4">col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-8">
+        我的里面嵌套了一个网格
+        <div class="row">
+          <div class="col-md-4">col-md-4</div>
+          <div class="col-md-4">col-md-4</div>
+          <div class="col-md-4">col-md-4</div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-8">我的里面嵌套了一个网格
+                <div class="row">
+                    <div class="col-md-8">88</div>
+                    <div class="col-md-4">84</div>
+                </div>
+            </div>
+            <div class="col-md-4">我的里面嵌套了一个网格
+                <div class="row">
+                    <div class="col-md-9">49</div>
+                    <div class="col-md-3">43</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+        </ul>
+    </div> -->
+    <!-- <div class="btn-group">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">按钮下拉菜单<span class="caret"></span></button>
+      <ul class="dropdown-menu">
+          <li><a href="##">按钮下拉菜单项</a></li>
+          <li><a href="##">按钮下拉菜单项</a></li>
+          <li><a href="##">按钮下拉菜单项</a></li>
+          <li><a href="##">按钮下拉菜单项</a></li>
+      </ul>
+    </div> -->
+
+    <!-- <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            食物
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation" class="dropdown-header">水果</li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">苹果</a></li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">香蕉</a></li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">梨</a></li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">桃</a></li>
+            <li role="presentation" class="dropdown-header">蔬菜</li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">芹菜</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">萝卜</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">茄子</a></li>
+            <li role="presentation" class="dropdown-header">粮食</li>
+            <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">米饭</a></li>
+            <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">馒头</a></li>
+            <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">面条</a></li>
+        </ul>
+    </div> -->
+    <!-- <div class="btn-toolbar">
+        <div class="btn-group btn-group-lg"><button type="button" class="btn btn-default"><span
+                    class="glyphicon glyphicon-step-backward"></span></button>
+            <button type="button" class="btn btn-default"><span
+                    class="glyphicon glyphicon-fast-backward"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-backward"></span></button>
+        </div>
+        <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pause"></span></button>
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-stop"></span></button>
+        </div>
+        <div class="btn-droup btn-group-xs">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-forward "></span></button>
+            <button type="button" class="btn btn-default"><span
+                    class="glyphicon glyphicon-fast-forward"></span></button>
+            <button type="button" class="btn btn-default"><span
+                    class="glyphicon glyphicon-step-forward"></span></button>
+        </div>
+    </div> -->
+    <!--有错误的代码 -->
+    <!-- <div class="btn-wrap">
+        <div class="btn-group btn-group-justified ">
+            <a type="button" class="btn btn-default" href="#">首页</a>
+            <div class="btn-group btn-group-justified">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    产品展示
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">收割机</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">电动机</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">拖拉机</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">电动车</a></li>
+                </ul>
+            </div>
+            <a type="button" class="btn btn-default" href="#">案例分析</a>
+            <a type="button" class="btn btn-default" href="#">联系我们</a>
+            <a type="button" class="btn btn-default" href="#">关于我们</a>
+        </div>
+     </div> -->
+    <!--有错误的代码 -->
+    <div class="btn-group dropup">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">按钮下拉菜单<span
+                class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="##">按钮下拉菜单项</a></li>
+            <li><a href="##">按钮下拉菜单项</a></li>
+            <li><a href="##">按钮下拉菜单项</a></li>
+            <li><a href="##">按钮下拉菜单项</a></li>
+        </ul>
+    </div>
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+<style>
+    body {
+        margin: 30px;
+        padding: 30px;
+    }
+
+    /* [class *=col-] {
+        background-color: #eee;
+        border: 1px solid #ccc;
+    }
+
+    [class *=col-] [class *=col-] {
+        background-color: #f36;
+        border: 1px dashed #fff;
+        color: #fff;
+    } */
+</style>
+
+</html>
