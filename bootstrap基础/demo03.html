@@ -105,7 +105,6 @@
         <div class="progress-bar progress-bar-danger " style="width:10%">10%</div>
         <div class="progress-bar progress-bar-default " style="width:10%">10%</div>
         <div class="progress-bar progress-bar-default " style="width:0%">0%</div>
-
     </div> -->
     <!-- <div class="alert alert-success alert-dismissable">成功<a href="#" class="alert-link">666666</a>
         <button class="close" type="button" data-dismiss="alert">&times;</button>
@@ -136,6 +135,9 @@
         <a href="#" class="list-group-item list-group-item-danger">css3文本</a>
         <a href="#" class="list-group-item list-group-item-warning">css3背景</a>
     </div> -->
+    <!-- 使用a标签为了防止只有鼠标点中字体时才会跳转,如果用a标签那么整个都可以被点击,而不单单是字体 -->
+
+
     <!-- <div class="media">
         <a href="#" class="pull-left">
             <img src="http://img.mukewang.com/52e1d29d000161fe06000338-300-170.jpg" alt="logo" class="media-object">
@@ -163,6 +165,8 @@
             </div>
         </div>
     </div> -->
+
+
     <!-- <ul class="media-list">
         <li class="media">
             <a href="#" class="pull-left">
@@ -328,7 +332,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     <h4 class="modal-title">模态弹出窗标题</h4>
                 </div>
                 <div class="modal-body">
@@ -341,6 +346,7 @@
             </div>
         </div>
     </div> -->
+    <!-- 配合js一起应用 -->
 
     <!-- <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">点击我</button>
     <div class="modal fade bs-example-modal-lg" id="mymodal" data-backdrop="static" data-keyboard="false">
@@ -363,8 +369,8 @@
     </div> -->
 
     <!-- <a data-toggle="modal" href="#mymodal" class=" btn btn-primary" >点击我会弹出模态弹出窗</a> -->
-    <!-- <button class="btn btn-primary" data-toggle="modal" data-target="">点击我</button>
-    <div class="modal fade bs-example-modal-sm" id="mymodal" data-backdrop="static" data-keyboard="false">
+    <!-- <button class="btn btn-primary" data-toggle="modal" data-target="">点击我</button> -->
+    <!-- <div class="modal fade bs-example-modal-sm" id="mymodal" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
@@ -406,8 +412,12 @@
         //         });
         //     })
         // });
-
     </script>
+    <style>
+        * {
+            user-select: none;
+        }
+    </style>
 </body>
 
 </html>
